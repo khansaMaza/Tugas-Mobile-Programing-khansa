@@ -37,5 +37,12 @@ public class MenuProgram extends AppCompatActivity {
                 startActivity(new Intent(MenuProgram.this, WebView.class));
             }
         });
+        Button button3 = findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MenuProgram.this, kalkulator.class));
+            }
+        });
     }
 }
