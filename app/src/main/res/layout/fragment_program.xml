@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentProgram">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/judul_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STMIK MERCUSUAR"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/subjudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Program Materi Android"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/judul_menu"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/button1"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subjudul"
+            android:layout_centerHorizontal="true"
+            android:text="ScrollView"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button1"
+            android:layout_centerHorizontal="true"
+            android:text="Web View"/>
+        <Button
+            android:id="@+id/button3"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button2"
+            android:layout_centerHorizontal="true"
+            android:text="Kalkulator"/>
+        <Button
+            android:id="@+id/bebas"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button3"
+            android:text="UTS Bebas"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mahasiswa"
+        android:title="Biodata Mahasiswa"
+        android:icon="@drawable/baseline_person_24"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/program"
+        android:title="Menu Program"
+        android:icon="@drawable/baseline_home_24"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/kampus"
+        android:title="Biodata Kampus"
+        android:icon="@drawable/baseline_school_24"
+        android:iconTint="@color/white"/>
+</menu>

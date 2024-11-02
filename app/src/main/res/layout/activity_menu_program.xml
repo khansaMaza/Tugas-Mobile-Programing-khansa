@@ -6,44 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuProgram">
-    <TextView
-        android:id="@+id/judul_menu"
-        android:layout_width="wrap_content"
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"/>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav"
+        android:layout_below="@id/header"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="STMIK MERCUSUAR"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="40dp"
-        android:textStyle="bold"/>
-    <TextView
-        android:id="@+id/subjudul"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Menu Program Materi Android"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/judul_menu"
-        android:layout_marginBottom="10dp"/>
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/subjudul"
-        android:layout_centerHorizontal="true"
-        android:text="Program 1"/>
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button1"
-        android:layout_centerHorizontal="true"
-        android:text="Program 2"/>
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button2"
-        android:layout_centerHorizontal="true"
-        android:text="Program 3"/>
+        app:menu="@menu/bottom_nav"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/setting_bottom_navbar"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"/>
 
 
 </RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentKampus">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/judul_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BIODATA KAMPUS"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+        <ImageView
+            android:id="@+id/foto_bio"
+            android:layout_below="@id/judul_bio"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/gedung_kampus"
+            android:layout_marginTop="10dp"/>
+        <TableLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/data_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foto_bio"
+            android:layout_centerHorizontal="true">
+            <TableRow>
+                <TextView
+                    android:text="Nama Kampus"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text=":"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text="STMIK Mercusuar"
+                    android:padding="5dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Kota"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text=":"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text="Bekasi"
+                    android:padding="5dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Akreditasi"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text=":"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text="Baik"
+                    android:padding="5dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Alamat"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text=":"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text="Jl. Raya Jatiwaringin 144\nPondok Gede"
+                    android:padding="5dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="WA"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text=":"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text="0888-7050-888"
+                    android:padding="5dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="E-mail"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text=":"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text="informasi@mercusuar.ac.id"
+                    android:padding="5dp"/>
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

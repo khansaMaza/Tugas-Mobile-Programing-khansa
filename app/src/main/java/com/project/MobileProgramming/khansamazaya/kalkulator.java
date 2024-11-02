@@ -3,20 +3,27 @@ package com.project.MobileProgramming.khansamazaya;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
+import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 public class kalkulator extends AppCompatActivity {
     Spinner spinner;
@@ -24,8 +31,8 @@ public class kalkulator extends AppCompatActivity {
     Double a,b;
     String c,d;
     TextView hasil;
-    Button hitung;
     double hasil_double;
+    ImageView menu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +43,7 @@ public class kalkulator extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
         angka1 = findViewById(R.id.angka1);
         angka2 = findViewById(R.id.angka2);
         spinner = findViewById(R.id.opsi_operasi);
@@ -129,4 +137,6 @@ public class kalkulator extends AppCompatActivity {
             hasil.setText("0");
         }
     }
+
+
 }
