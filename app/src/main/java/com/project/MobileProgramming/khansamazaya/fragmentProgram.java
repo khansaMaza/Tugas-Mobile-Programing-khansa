@@ -41,6 +41,13 @@ public class fragmentProgram extends Fragment {
                 startActivity(new Intent(getActivity(), kalkulator.class));
             }
         });
+        Button button4 = view.findViewById(R.id.bebas);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), konversi_satuan.class));
+            }
+        });
 
         return view;
     }

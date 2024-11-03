@@ -15,6 +15,9 @@
         android:theme="@style/Theme.KhansaMazaya"
         tools:targetApi="31">
         <activity
+            android:name=".konversi_satuan"
+            android:exported="false" />
+        <activity
             android:name=".kalkulator"
             android:exported="false" />
         <activity

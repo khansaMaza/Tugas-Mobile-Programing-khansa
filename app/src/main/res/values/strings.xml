@@ -14,12 +14,29 @@
 \n\n\tUntuk mengatasi permasalahan ini, diperlukan upaya bersama dari seluruh negara dan masyarakat dunia. Mengurangi emisi gas rumah kaca, mengembangkan energi terbaruw, dan menerapkan praktik pertanian berkelanjutan adalah beberapa langkah penting yang harus dilakukan. Selain itu, kita juga perlu meningkatkan kesadaran masyarakat tentang pentingnya menjaga lingkungan dan mendorong perubahan perilaku.
 
 \n\n\tPerubahan iklim adalah tantangan besar yang kita hadapi bersama. Namun, bukan berarti kita tidak dapat melakukan apa-apa. Setiap individu memiliki peran penting dalam mengatasi masalah ini. Dengan tindakan kecil yang dilakukan secara konsisten, kita dapat berkontribusi dalam menciptakan masa depan yang lebih baik bagi generasi mendatang.</string>
-    <string-array name="pilihan_opeerasi">
+    <string-array name="pilihan_operasi">
         <item>Silahkan pilih operasi yang diinginkan</item>
         <item>Perkalian</item>
         <item>Pembagian</item>
         <item>Penjumlahan</item>
         <item>Pengurangan</item>
+    </string-array>
+    <string-array name="pilihan_konversi">
+        <item>Silahkan pilih</item>
+        <item>Konversi Massa</item>
+    </string-array>
+    <string-array name="konversi_berat">
+        <item>Silahkan pilih</item>
+        <item>Metrik Ton</item>
+        <item>Kilogram</item>
+        <item>Gram</item>
+        <item>Miligram</item>
+        <item>Mikrogram</item>
+        <item>Ton Panjang</item>
+        <item>Ton Pendek</item>
+        <item>Stone</item>
+        <item>Pound</item>
+        <item>Ounce</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
