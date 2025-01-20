@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reguister"
+    android:paddingTop="40dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/title_reg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrasi Akun"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/logo_awal"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo_mercu"
+                android:layout_below="@id/title_reg1"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/edtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_below="@id/logo_awal"
+                android:hint="\tE-Mail"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/baseline_email_24"/>
+            <EditText
+                android:id="@+id/edtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_below="@id/edtemail"
+                android:hint="\tPassword"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_key_24"/>
+            <EditText
+                android:id="@+id/conf_edtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_below="@id/edtpassword"
+                android:hint="\tKonfirmasi Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_key_24"/>
+            <Button
+                android:id="@+id/regist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_below="@id/conf_edtpassword"
+                android:text="Daftar"
+                android:backgroundTint="@color/header_dgn_judul"/>
+            <TextView
+                android:id="@+id/log_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah Punya Akun?\nMasuk Sekarang"
+                android:clickable="true"
+                android:layout_below="@id/regist"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold|italic"
+                android:textColor="#6C6C6C"
+                android:textSize="11dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
