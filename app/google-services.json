@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "635917213059",
+    "project_id": "mobileprogrammingkhansa",
+    "storage_bucket": "mobileprogrammingkhansa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635917213059:android:96e70fa6b2b32342b26ab6",
+        "android_client_info": {
+          "package_name": "com.project.MobileProgramming.khansamazaya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWAF3I_JQcziQlC3e9hjxgIjPlYGTLQW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

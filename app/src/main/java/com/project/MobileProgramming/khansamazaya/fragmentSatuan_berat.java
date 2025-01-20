@@ -19,7 +19,6 @@ import java.math.BigDecimal;
 
 public class fragmentSatuan_berat extends Fragment {
 
-    //untuk menampung nilai hasil hitung dari method convert
     BigDecimal hasil_convert_metrik_ton, hasil_convert_kg, hasil_convert_gram, hasil_convert_miligram,
             hasil_convert_mikrogram, hasil_convert_ton_panjang, hasil_convert_ton_pendek, hasil_convert_stone,
             hasil_convert_pound, hasil_convert_ounce;

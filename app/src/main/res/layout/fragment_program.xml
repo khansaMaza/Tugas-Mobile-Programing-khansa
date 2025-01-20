@@ -3,11 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragmentProgram">
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <TextView
             android:id="@+id/judul_menu"
             android:layout_width="wrap_content"
@@ -25,41 +30,93 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/judul_menu"
             android:layout_marginBottom="10dp"/>
-        <Button
-            android:id="@+id/button1"
-            android:layout_marginRight="80dp"
-            android:layout_marginLeft="80dp"
+        <LinearLayout
+            android:id="@+id/layot_button1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_below="@id/subjudul"
-            android:layout_centerHorizontal="true"
-            android:text="ScrollView"/>
-        <Button
-            android:id="@+id/button2"
-            android:layout_marginRight="80dp"
-            android:layout_marginLeft="80dp"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button1"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:text="ScrollView"
+                app:cornerRadius="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:src="@drawable/letter"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button2"
+                android:layout_marginVertical="5dp"
+                app:cornerRadius="0dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:backgroundTint="@color/black"
+                android:text="Web View"
+                android:layout_margin="5dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layot_button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/button1"
-            android:layout_centerHorizontal="true"
-            android:text="Web View"/>
-        <Button
-            android:id="@+id/button3"
-            android:layout_marginRight="80dp"
-            android:layout_marginLeft="80dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/layot_button1">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:cornerRadius="0dp"
+                android:backgroundTint="@color/black"
+                android:layout_below="@id/layot_button1"
+                android:layout_centerHorizontal="true"
+                android:text="Kalkulator"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bebas"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@id/button3"
+                app:cornerRadius="0dp"
+                android:text="UTS Bebas"
+                android:backgroundTint="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/button2"
-            android:layout_centerHorizontal="true"
-            android:text="Kalkulator"/>
-        <Button
-            android:id="@+id/bebas"
-            android:layout_marginRight="80dp"
-            android:layout_marginLeft="80dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/button3"
-            android:text="UTS Bebas"/>
+            android:orientation="horizontal"
+            android:layout_below="@id/layot_button2">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/log_out"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="Log Out"
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/black"
+                android:layout_weight="1"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/crud"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="CRUD"
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/black"
+                android:layout_weight="1"/>
+        </LinearLayout>
     </RelativeLayout>
 
+</ScrollView>
 </FrameLayout>
